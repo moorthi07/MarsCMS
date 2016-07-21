@@ -2,16 +2,22 @@
 ---
 MARS Mobile CMS v0.1
 ---
+## Website pages
+<a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"  href="https://www.flickr.com/photos/67625496@N06/27832285734/in/dateposted-public/" title="marscms-hom"><img src="https://c7.staticflickr.com/9/8419/27832285734_ddd725c1a4_n.jpg" width="320" height="198" alt="marscms-hom"></a> 
+
+
+<a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"  href="https://www.flickr.com/photos/67625496@N06/28343841712/in/dateposted-public/" title="marscms-servicespage"><img src="https://c1.staticflickr.com/9/8777/28343841712_d3f9e11cff_n.jpg" width="320" height="197" alt="marscms-servicespage"></a>
+<!--<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>-->
 
   
 ## Website Admin Dashboard
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/67625496@N06/26733225002/in/dateposted-public/" title="marscms-dashboard1"><img src="https://farm8.staticflickr.com/7429/26733225002_5bc7951f14_b.jpg" width="937" height="706" alt="marscms-dashboard1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"  href="https://www.flickr.com/photos/67625496@N06/28370248251/in/dateposted-public/" title="marscms-dashboardmain"><img src="https://c4.staticflickr.com/9/8656/28370248251_9c7d9eea8b_n.jpg" width="320" height="200" alt="marscms-dashboardmain"></a> 
 
 ## Website Admin Dashboard - Settings page
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/67625496@N06/26733383952/in/dateposted-public/" title="settings-dashboard1"><img src="https://farm8.staticflickr.com/7322/26733383952_a642a4c2d3_b.jpg" width="970" height="734" alt="settings-dashboard1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/67625496@N06/26733383952/in/dateposted-public/" title="settings-dashboard1"><img src="https://farm8.staticflickr.com/7322/26733383952_a642a4c2d3_b.jpg" width="970" height="734" alt="settings-dashboard1"></a> 
 
 ## Website Admin Dashboard - Login page - Private Zone
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/67625496@N06/26733384052/in/dateposted-public/" title="loginpage"><img src="https://farm8.staticflickr.com/7086/26733384052_61be7f0bdb_b.jpg" width="971" height="737" alt="loginpage"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"  href="https://www.flickr.com/photos/67625496@N06/28448773615/in/dateposted-public/" title="marscms-login"><img src="https://c8.staticflickr.com/9/8327/28448773615_646991ff11_n.jpg" width="302" height="320" alt="marscms-login"></a> 
 
 ## API and Database Admin DeployD Dashboard
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/67625496@N06/26827076945/in/dateposted-public/" title="deployd-dashboard"><img src="https://farm8.staticflickr.com/7191/26827076945_98a3a0e189_b.jpg" width="972" height="740" alt="deployd-dashboard"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
