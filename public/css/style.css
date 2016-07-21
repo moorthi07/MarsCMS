@@ -1,0 +1,11 @@
+.md-button {
+    min-width: 1%;
+    margin: 1px 1px;  
+}
+#textBox #sourceText {
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height:70%;
+}
+.mcebody{border-radius: 10x;}

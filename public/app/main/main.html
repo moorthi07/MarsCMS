@@ -1,0 +1,268 @@
+ <style>
+    html,body{font-family:"Roboto",sans-serif;}.styles__ribbon{background-color:rgba(0,0,0,.06);color:#fff;width:90%;margin:80px 0 80px 0;padding:3em 0;-webkit-box-orient:horizontal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;}h1,h2,h3,h4,h5,h6,.mdl-button,.mdl-typography--display-4,.mdl-typography--display-3,.mdl-typography--display-2{font-weight:300;}.mdl-button--accent.mdl-button--accent.mdl-button--raised,.mdl-button--accent.mdl-button--accent.mdl-button--fab{background:#96CA2D;color:#fff;}a.mdl-button:hover{text-decoration:none;color:rgba(255,255,255,.9);}.text--bold-shadow{text-shadow:0 2px 2px rgba(0,0,0,.1);}footer{background:#fafafa;padding:3em 0;color:#555;}a{color:#009688;text-decoration:none;font-weight:bold;}a:hover{text-decoration:underline;}.material-icons.md-18{font-size:18px;}.material-icons.md-24{font-size:24px;}.material-icons.md-36{font-size:36px;}.material-icons.md-48{font-size:48px;}.material-icons.md-96{font-size:96px;}.material-icons.md-dark{color:rgba(0,0,0,0.54);}.material-icons.md-dark.md-inactive{color:rgba(0,0,0,0.26);}.material-icons.md-light{color:rgba(255,255,255,1);}.material-icons.md-light.md-inactive{color:rgba(255,255,255,0.3);}.styles__ribbon--lime{background-color:#cddc39;}.mdl-button--large{font-size:24px;height:48px;padding:0 16px;}a.mdl-button--large{padding-top:10px;}.styles__ribbon--cyan{background-color:#00bcd4;opacity:.8;}.styles__ribbon--teal{background-color:#4BB5C1;}.styles__ribbon.styles__ribbon--right{margin-left:10%;}pre{font-size:87%;background-color:rgba(0,0,0,.06);border-radius:3px;padding:16px;}.left-col{padding-right:40px;}.pull-right{float:right;}.text-right{text-align:right;}.text-center{text-align:center;}hr{margin-top:5em;margin-bottom:5em;opacity:.5;}pre{max-width:100%;overflow-x:auto;}.page-content{background:#fff;color:#555;}.container{width:100%;max-width:960px;margin:0 auto;padding:3em 1em;box-sizing:border-box;}.layout-transparent{background:linear-gradient(to right,#2193b0,#6dd5ed);}.layout-transparent .mdl-layout__header,.layout-transparent .mdl-layout__drawer-button,.layout-transparent .mdl-layout__content{color:white;}@media only screen and (max-width: 600px) {.mdl-typography--display-4{font-size:64px!important;}.mdl-typography--display-2{font-size:36px;}.mdl-typeography--display-3{font-size:32px;}.mdl-button--large{font-size:18px;height:36px;padding:0 12px;}a.mdl-button--large{padding-top:4px;}.container{width:100%;max-width:100%;padding:6px;}.styles__ribbon{padding:0 1em;width:90%;margin:0;}.styles__ribbon--right{margin:0 0 0 10%;}hr{margin:2em 0;}}md-fab-speed-dial{position:fixed;right:1em;bottom:1em;z-index:20;}
+    </style> 
+  
+
+<div layout="row" style="min-height:100%;">
+    <menu></menu>
+    <md-content flex layout="column">
+        <md-toolbar style="position:fixed;">
+            <div class="md-toolbar-tools">
+                
+                <md-button class="md-icon-button" ng-click="toggle()" aria-label="Menu" hide-gt-md>
+                    <md-icon md-svg-icon="/icons/fi-thumbnails.svg"></md-icon>
+                </md-button>
+                <h3 md-whiteframe="3">
+ Indo-Mars.Com 
+          </h3>
+            </div>
+        </md-toolbar>
+        <br>
+        <br>
+        <br>
+        <md-content>
+<!--            -->
+            
+            
+            
+<div class="mdl-layout__content-">
+<div class="container text-center">
+<h1 class="text--bold-shadow mdl-typography--display-4">MARS Mobile CMS <small>v0.1</small></h1>
+<h3 class="text--bold-shadow mdl-typography--display-2">Customizable Content Management System with MongoDB, Deployd (NodeJS, ExpressJS), AngularJS 1.x</h3>
+<a href="https://github.com/ .zip" class="mdl-button mdl-button--large mdl-button--accent mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+<!--<i class="material-icons md-24">file_download</i>-->
+Download Now
+</a>
+</div>
+<div class="page-content">
+<div class="container">
+<h2 class="mdl-typeography--display-3" id="getting-started">Getting Started</h2>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--8-col mdl-cell--5-col-desktop left-col">
+<h4 class="mdl-typeograph--headline">Notes</h4>
+<p>
+This is still very much a work in progress, so expect to get
+your hands dirty and file issues. Nonetheless, it's being
+prepped for use in production and should get the job done.
+</p>
+</div>
+<div class="mdl-cell mdl-cell--8-col mdl-cell--7-col-desktop right-col">
+<!--
+<h4 class="mdl-typeograph--headline">Via NPM</h4>
+<pre>&lt;script src=" "&gt;&lt;script&gt;</pre>
+-->
+<h4 class="mdl-typeograph--headline">Via Bower (available soon)</h4>
+<pre>bower install --save MarsCms</pre>
+<h4 class="mdl-typeograph--headline">Via NPM (available soon)</h4>
+<pre>npm install --save MarsCms</pre>
+</div>
+</div>
+</div>
+<div class="container" ng-controller="Ctrl">
+<h2 class="mdl-typeography--display-3" id="usage">Usage</h2>
+<h3 class="mdl-typeography--display-1" id="demo">Demo</h3>
+<p>
+There's also a <a href="/fullscreen.html">fullscreen enabled demo here</a>.
+It's designed to fill up the horizontal and vertical space of
+the parent element, so fullscreen is easy to do.
+</p>
+<p>
+Or, if you prefer, go fullscreen with the demo   below
+by <a href="#" ng-click="fullscreen()">clicking here</a>.
+</p>
+<div style="height: 800px;">
+ 
+</div>
+<p>{{ msg || "Click on a date/button to get started"}}</p>
+<pre>$scope.selectedDate = {{ selectedDate | json }}</pre>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop left-col">
+<section>
+<h5 class="mdl-typeography--headline">With All Options</h5>
+<p>
+While I'm working on the documentation, feel free to check
+out the example of it in action here.
+</p>
+<p>
+If you're brave, you might be able to poke around the
+example and figure things out! Better yet, why not help
+contribute to the documentation?
+</p>
+</section>
+<section>
+<h5 class="mdl-typeography--headline">First Day Of Week</h5>
+<p>
+You can easily change the first day of the week.
+</p>
+<md-input-container>
+<label>First day of week</label>
+<md-select ng-model="weekStartsOn" ng-change="">
+<md-option value="0">Sunday</md-option>
+<md-option value="1">Monday</md-option>
+<md-option value="2">Tuesday</md-option>
+<md-option value="3">Wednesday</md-option>
+<md-option value="4">Thursday</md-option>
+<md-option value="5">Friday</md-option>
+<md-option value="6">Saturday</md-option>
+</md-select>
+</md-input-container>
+</section>
+<section>
+<h5>Updating   data using the   service</h5>
+<p>
+To support scenarios where you wish to update the content of a
+given day without re-loading the containing scope a  
+service has been added. Just inject   and use the
+<code>setDayContent(date,content)</code> function
+</p>
+<p>
+<md-button ng-click="setContentViaService()">Make today a happy day</md-button>
+</p>
+</section>
+</div>
+<div class="mdl-cell mdl-cell--12-col mdl-cell--6-col-desktop right-col">
+<section>
+<h5 class="mdl-typeography--headline"> Layout</h5>
+<p>You can also change the  layout dynamically.</p>
+<md-button ng-click="setDirection('vertical')">Agenda</md-button>
+<md-button ng-click="setDirection('horizontal')"></md-button>
+</section>
+<section>
+<h5 class="mdl-typeography--headline">Selecting Dates</h5>
+<p>
+You can select multiple dates. Just make sure your ng-model
+value is initialized as an array. This demo also demonstrates
+that if the ngModel is changed from outside the directive,
+the directive will detect that change. That means you can
+select dates programatically.
+</p>
+<p>
+<md-button ng-click="selectedDate = [];">Multiple dates</md-button>
+<md-button ng-click="selectedDate = false;">Single date</md-button>
+</p>
+</section>
+<section>
+<h5 class="mdl-typeography--headline">Tooltips</h5>
+<p>
+Since 0.2.9 tooltips are off by default, but can easily be enabled.
+See the example below.
+</p>
+</section>
+<section>
+<h5 class="mdl-typeography--headline">Disable future selection</h5>
+<p>
+If you don&apos;t want users selecting dates in the future then
+set the disable-future-selection attribute on the directive to true
+<md-button ng-click="disableFutureDates = !disableFutureDates;">Toggle future selection</md-button>
+</p>
+</section>
+</div>
+</div>
+<div class="mdl-grid">
+<div class="mdl-cell md-cell--12-col mdl-cell--12-col-desktop">
+<pre>
+ 
+</pre>
+</div>
+</div>
+</div>
+</div>
+    
+<footer>
+<div class="container">
+ 
+</div>
+</footer>
+</div>
+            
+<!--            -->
+            
+            <!--        About     -->
+            <center>
+                <h1>{{::aboutContent.title}} </h1>
+                <md-content layout="column" marked="aboutContent.content"></md-content>
+            </center>
+            <!--            Other contents     -->
+            <md-content layout="row" layout-padding>
+                <md-content flex-gt-sm="50" flex ng-repeat="content in otherContents | filter:search">
+                    <h3>{{::content.title}}</h3>
+                    <md-content layout="column" marked="content.content"></md-content>
+                </md-content>
+            </md-content>
+            <md-divider></md-divider>
+            <md-content layout-padding>
+                <center>
+                    <h1>Member info</h1>
+                    <md-grid-list md-cols-sm="2" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
+                        <md-grid-tile ng-repeat="member in members | filter:search | orderBy:'lastName'" md-rowspan="1" md-colspan="2" md-colspan-sm="2" md-gutter="2em" md-gutter-gt-sm="1em" ng-style="{'background-image' : 'url(' + member.photo + ')'}" style="background-size: cover; background-position:center;">
+                            <md-grid-tile-footer>
+                                <h3>{{::member.lastName}}, {{::member.firstName}} - {{::member.fullCategory.name}}</h3>
+                            </md-grid-tile-footer>
+                        </md-grid-tile>
+                    </md-grid-list>
+                </center>
+            </md-content>
+            <!--            Laborator     -->
+            <md-divider></md-divider>
+            <md-content layout-padding style="padding-left: 15%; padding-right: 15%;">
+                <center>
+                    <h1>Service</h1>
+                </center>
+                <md-content ng-repeat="category in serviceCategories | filter:search" layout-padding>
+                    <h3>{{::category.name}}</h3>
+                    <md-list flex="80">
+                        <md-list-item ng-repeat="service in category.services | filter:search" class="md-2-line">
+                            <div class="md-list-item-text">
+                                <h3>{{::service.name}}</h3>
+                                <p>{{::service.days | number}} zile</p>
+                                <span flex></span>
+                                <p class="md-secondary">{{::service.price | currency:'RON'}}</p>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-content>
+            </md-content>
+            <md-divider></md-divider>
+            <md-content layout-padding id="polls">
+                <center>
+                    <h1>Questions</h1>
+                </center>
+                <md-content layout-padding>
+                    <md-content layout-padding ng-repeat="question in questions | filter:search">
+                        <form ng-submit="sendPoll()">
+                            <md-input-container>
+                                <label>Full Name</label>
+                                <input type="text" ng-model="newPoll.fullName">
+                            </md-input-container>
+                            <md-input-container>
+                                <label>Telephone</label>
+                                <input type="text" ng-model="newPoll.tel">
+                            </md-input-container>
+                            <md-input-container>
+                                <label>Email</label>
+                                <input type="email" ng-model="newPoll.email">
+                            </md-input-container>
+                            <md-input-container>
+                                <label>Address</label>
+                                <textarea cols="30" rows="3" ng-model="newPoll.address"></textarea>
+                            </md-input-container>
+                            <h3>{{::$index+1}}. {{::question.question}}</h3>
+                            <md-radio-group ng-model="newPoll.answers[$index]">
+                                <md-radio-button ng-repeat="answer in question.answers" value="{{::question.question}}-{{::answer.text}}">{{::answer.text}}</md-radio-button>
+                            </md-radio-group>
+                            <md-button type="submit" class="md-primary">Submit</md-button>
+                        </form>
+                    </md-content>
+                </md-content>
+            </md-content>
+        </md-content>
+        <br>
+        <ui-view></ui-view>
+    </md-content>
+</div>
+ 
+<!--///////////////-->
+ 
+ 
+       
+ 

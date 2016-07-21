@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "title",
+			"order": 0
+		},
+		"slug": {
+			"name": "slug",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "slug",
+			"order": 1
+		},
+		"html": {
+			"name": "html",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "html",
+			"order": 2
+		},
+		"css": {
+			"name": "css",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "css",
+			"order": 3
+		},
+		"tags": {
+			"name": "tags",
+			"type": "array",
+			"typeLabel": "array",
+			"required": false,
+			"id": "tags",
+			"order": 4
+		},
+		"creator": {
+			"name": "creator",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "creator",
+			"order": 5
+		},
+		"createddt": {
+			"name": "createddt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "createddt",
+			"order": 6
+		},
+		"description": {
+			"name": "description",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "description",
+			"order": 7
+		}
+	}
+}

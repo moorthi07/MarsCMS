@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/sendur-im1/Documents/Workspaces/DeploydMarsCms/resources/posts/get.js",
+        "C:/Users/sendur-im1/Documents/Workspaces/DeploydMarsCms/public/dist/bower.min.js",
+        "C:/Users/sendur-im1/Documents/Workspaces/DeploydMarsCms/public/app/main/route.js",
+        "C:/Users/sendur-im1/Documents/Workspaces/DeploydMarsCms/bower_components/angular-material/modules/js/content/content.js"
+    ]
+}
