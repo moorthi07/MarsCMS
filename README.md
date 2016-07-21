@@ -1,6 +1,6 @@
-# angular-deployd-admin  
+# MARS Mobile CMS v0.1  
 ---
-Angular CMS contains 3 User interfaces : Database and API dashboard, Website control panel,  website 
+MARS Mobile CMS v0.1
 ---
 
   
@@ -22,7 +22,7 @@ Angular CMS contains 3 User interfaces : Database and API dashboard, Website con
 To download paste this command in your terminal window:
 
 ```
-git clone https://github.com/rgolea/angular-deployd-admin.git
+https://github.com/moorthi07/MarsCMS.git
 ```
 ---
 
@@ -30,8 +30,9 @@ git clone https://github.com/rgolea/angular-deployd-admin.git
 Make sure you have [Node.js](https://nodejs.org/) installed. Try having [MongoDB](http://www.mongodb.org/) as well.
  
 *** Make sure you are in elevated adminstrator permission. (Some packages will through error if you don't have right permission.)
-
+```
 -- In Mac / Linux : In terminal use 'sudo root' to change user to admin
+```
 -- In Windows : Right click on 'command prompt' in menu and select 'Run as administrator'
 
 Step 1. - Install Grunt and Bower
@@ -65,13 +66,21 @@ In order to make the app work execute Grunt to minify and concatenate the `javas
 ```
 grunt
 ```
-Use Grunt watch to be able to change the files automatically. You can do that by using:
+Use Grunt watch to be able to deploy the modified files automatically by running the Watch section of the .grunt file. You can do that by using:
 ```
 grunt watch
 ```
 ---
 ###Running the app
 
+###Check MongoDB connection string:
+
+If you have not created any mongodb database, Mars CMS will automatically create dpdinterface  database in mongodb. If you like to use different database , change the following code in 'app.js' in the root folder (not in the /public folder *)
+```
+db: {
+    connectionString: 'mongodb://localhost:27017/dpdinterface'
+  }
+```
 You can run the app by starting mongodb and the entire app. After that, open your browser and go to [http://localhost:2403/dashboard](http://localhost:2403/dashboard). Go to the users collection and add an admin user. (Fillin Users first and last name and select admin column check box to make the user as 'ADMIN')
 
 First start and run the,
@@ -90,7 +99,7 @@ For Application in development:
 npm run dev
 ```
 ---
-###User Interfaces: ( GUI )
+### Accessing two User Interfaces: ( GUI )
  ```
 1. Deployd admin Dashboard: URL:
 ```
