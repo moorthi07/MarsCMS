@@ -2,40 +2,40 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         concat: {
-//            bowerjs: {
-//                src: [
-//                    './bower_components/angular/angular.js',
-//                    './bower_components/angular-animate/angular-animate.js',
-//                    './bower_components/angular-aria/angular-aria.js',
-//                    './bower_components/angular-touch/angular-touch.js',
-//                    './bower_components/angular-resource/angular-resource.js',
-//                    './bower_components/angular-material/angular-material.js',
-//                    './bower_components/angular-ui-router/release/angular-ui-router.js',                    
-//                    './bower_components/angular-sanitize/angular-sanitize.js',
-//                    './bower_components/rangy/rangy-core.js',
-//                    './bower_components/angular-file-data-url/src/fileDataUrl.js',
-//                    './bower_components/marked/lib/marked.js',
-//                    './bower_components/angular-marked/angular-marked.js',
-//                    './bower_components/ng-file-upload/ng-file-upload-all.js',
-//                    './bower_components/ngmap/build/scripts/ng-map.js',
-//                    './bower_components/tinymce-dist/tinymce.js',
-//                    './bower_components/angular-ui-tinymce/src/tinymce.js'
-//                ],
-//                dest: './public/dist/bower.js'
-//            },
+            bowerjs: {
+                src: [
+                    './bower_components/angular/angular.js',
+                    './bower_components/angular-animate/angular-animate.js',
+                    './bower_components/angular-aria/angular-aria.js',
+                    './bower_components/angular-touch/angular-touch.js',
+                    './bower_components/angular-resource/angular-resource.js',
+                    './bower_components/angular-material/angular-material.js',
+                    './bower_components/angular-ui-router/release/angular-ui-router.js',                    
+                    './bower_components/angular-sanitize/angular-sanitize.js',
+                    './bower_components/rangy/rangy-core.js',
+                    './bower_components/angular-file-data-url/src/fileDataUrl.js',
+                    './bower_components/marked/lib/marked.js',
+                    './bower_components/angular-marked/angular-marked.js',
+                    './bower_components/ng-file-upload/ng-file-upload-all.js',
+                    './bower_components/ngmap/build/scripts/ng-map.js',
+                    './bower_components/tinymce-dist/tinymce.js',
+                    './bower_components/angular-ui-tinymce/src/tinymce.js'
+                ],
+                dest: './public/dist/bower.js'
+            },
             //uncomment for production and comment the below one. temporary for debugging
-//            scriptsjs: {
-//                src: [
-//                    './public/app/**/*.js'
-//                ],
-//                dest: './public/dist/script.js'
-//            },
-              scriptsjs: {
+            scriptsjs: {
                 src: [
                     './public/app/**/*.js'
                 ],
-                dest: './public/dist/script.min.js'
+                dest: './public/dist/script.js'
             },
+//              scriptsjs: {
+//                src: [
+//                    './public/app/**/*.js'
+//                ],
+//                dest: './public/dist/script.min.js'
+//            },
             bowercss: {
                 src: [
                     './bower_components/angular-material/angular-material.css',
@@ -56,12 +56,12 @@ module.exports = function (grunt) {
                     './public/dist/bower.min.js': './public/dist/bower.js'
                 }
             }
-//            ,
-//            scriptsjs: {
-//                files: {
-//                    './public/dist/script.min.js': './public/dist/script.js'
-//                }
-//            }
+            ,
+            scriptsjs: {
+                files: {
+                    './public/dist/script.min.js': './public/dist/script.js'
+                }
+            }
         },
         cssmin: {
             bowercss: {
@@ -76,10 +76,10 @@ module.exports = function (grunt) {
             }
         },
         watch: {
-//            scripts: {
-//                files: ['./public/app/**/*.js'],
-//                tasks: ['concat:scriptsjs', 'uglify:scriptsjs']
-//            },
+            scripts: {
+                files: ['./public/app/**/*.js'],
+                tasks: ['concat:scriptsjs', 'uglify:scriptsjs']
+            },
              scripts: {
                 files: ['./public/app/**/*.js'],
                 tasks: ['concat:scriptsjs']
@@ -145,6 +145,6 @@ module.exports = function (grunt) {
 
     //default task
 //    Uncomment for production
-//    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'copy']);
-     grunt.registerTask('default', ['concat',   'cssmin', 'copy']);
+    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'copy']);
+//     grunt.registerTask('default', ['concat',   'cssmin', 'copy']);
 };
