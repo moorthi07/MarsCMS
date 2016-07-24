@@ -33,7 +33,7 @@ https://github.com/moorthi07/MarsCMS.git
 ---
 
 ###Instalation
-Make sure you have [Node.js](https://nodejs.org/) installed. Try having [MongoDB](http://www.mongodb.org/) as well.
+Make sure you have [Node.js](https://nodejs.org/) installed.   [MongoDB](http://www.mongodb.org/) - community version installed. [Git terminal tool] (https://git-scm.com/) installed.
  
 *** Make sure you are in elevated adminstrator permission. (Some packages will through error if you don't have right permission.)
 ```
