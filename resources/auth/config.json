@@ -2,8 +2,8 @@
 	"type": "AuthResource",
 	"usersCollection": "",
 	"SALT_LEN": "",
-	"baseURL": "http://localhost:2403/",
-	"allowedRedirectURLs": "^http://localhost:2403.*$",
+	"baseURL": "http://localhost:2404/",
+	"allowedRedirectURLs": "^http://localhost:2404.*$",
 	"disableSessionId": true,
 	"allowLocal": false,
 	"allowTwitter": true,
@@ -22,5 +22,11 @@
 	"googleClientSecret": "n564uhn564mYdo-2L4AqhOnP0NRlNRl",
 	"googleScope": "",
 	"returnParams": false,
-	"disableReturnParams": true
+	"disableReturnParams": true,
+	"allowDribbble": false,
+	"allowWeibo": false,
+	"dribbbbleClientId": "",
+	"dribbbbleClientSecret": "",
+	"weiboClientId": "",
+	"weiboClientSecret": ""
 }

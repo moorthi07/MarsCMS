@@ -1,15 +1,15 @@
 {
-  "name": "angular-deployd-admin",
+  "name": "MarsCMS",
   "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "repository": {
-    "url": "git://github.com/rgolea/angular-deployd-admin.git"
+    "url": "git://github.com/moorthi07/MarsCMS.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "ENV=development DEBUG=* node app.js"
+    "start": "node server.js  ",
+    "dev": "ENV=development DEBUG=* node app.js  "
   },
   "author": "",
   "license": "ISC",
@@ -19,12 +19,14 @@
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-dpdjs": "^0.1.1"
   },
   "dependencies": {
     "deployd": "^0.8.4",
+    "dpd-clientlib": "0.0.1",
     "dpd-email": "^0.1.0",
-    "dpd-fileupload": "0.0.13",
+    "dpd-fileupload": "^0.0.17",
     "dpd-passport": "^0.3.4"
   }
 }

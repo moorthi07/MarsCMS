@@ -51,7 +51,7 @@ app.controller('contentCtrl', ['$scope', 'Content', '$mdSidenav', '$mdToast', '$
                 console.log(err);
                 $mdToast.show(
                     $mdToast.simple()
-                    .content('An error occured!')
+                    .content('An error occured!',err)
                     .position('right bottom')
                 );
             }

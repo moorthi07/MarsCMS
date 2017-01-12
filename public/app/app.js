@@ -1,7 +1,7 @@
 var app = angular.module('app', ['ngResource','ui.tinymce', 'ngMaterial', 'ngAnimate', 'ngAria', 'ui.router', 'file-data-url', 'hc.marked', 'slugifier', 'ngFileUpload', 'ngTouch', 'ngMap']);
 //'ngSanitize',
-if (window.location.host === 'localhost:2403') {
-    app.value('SERVER_URL', 'http://localhost:2403');
+if (window.location.host === 'localhost:2404') {
+    app.value('SERVER_URL', 'http://localhost:2404');
 } else {
     app.value('SERVER_URL', 'http://indo-mars.com/marscms');
 };

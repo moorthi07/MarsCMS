@@ -1,12 +1,13 @@
 // require deployd
 var deployd = require('deployd');
  
+var port=2404;
 // configure database etc. 
 var server = deployd({
-  port: process.env.PORT || 2403,
+  port: process.env.PORT || port,
   env: process.env.ENV || 'development',
   db: {
-    connectionString: 'mongodb://localhost:27017/dpdinterface'
+    connectionString: 'mongodb://localhost:27017/MarsCMSDB'
   }
 });
  
@@ -19,7 +20,7 @@ process.on('uncaughtException', function (err) {
  
 // debug
 server.on('listening', function() {
-  console.log("Server is listening on port: " + (process.env.PORT || 2403));
+  console.log("Server is listening on port: " + (process.env.PORT || port));
 });
  
 // Deployd requires this

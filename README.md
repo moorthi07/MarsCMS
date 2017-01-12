@@ -2,6 +2,7 @@
 ---
 MARS Mobile CMS v0.1
 ---
+ (Contributed and forked from "git://github.com/rgolea/angular-deployd-admin.git")
 ## Website pages
 <a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"  href="https://www.flickr.com/photos/67625496@N06/27832285734/in/dateposted-public/" title="marscms-hom"><img src="https://c7.staticflickr.com/9/8419/27832285734_ddd725c1a4_n.jpg" width="320" height="198" alt="marscms-hom"></a> 
 

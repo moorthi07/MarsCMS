@@ -6,7 +6,7 @@ if(this.about){
 dpd.content.get().then(function(contents){
     contents.forEach(function(content){
         if(content.about && content.id !== id){
-            cancel();
+            cancel("Already about page exists", 200);
         }
     });
 });

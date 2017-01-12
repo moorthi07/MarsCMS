@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                     './bower_components/angular-touch/angular-touch.js',
                     './bower_components/angular-resource/angular-resource.js',
                     './bower_components/angular-material/angular-material.js',
-                    './bower_components/angular-ui-router/release/angular-ui-router.js',                    
+                    './bower_components/angular-ui-router/release/angular-ui-router.js',
                     './bower_components/angular-sanitize/angular-sanitize.js',
                     './bower_components/rangy/rangy-core.js',
                     './bower_components/angular-file-data-url/src/fileDataUrl.js',
@@ -30,16 +30,16 @@ module.exports = function (grunt) {
                 ],
                 dest: './public/dist/script.js'
             },
-//              scriptsjs: {
-//                src: [
-//                    './public/app/**/*.js'
-//                ],
-//                dest: './public/dist/script.min.js'
-//            },
+            //              scriptsjs: {
+            //                src: [
+            //                    './public/app/**/*.js'
+            //                ],
+            //                dest: './public/dist/script.min.js'
+            //            },
             bowercss: {
                 src: [
                     './bower_components/angular-material/angular-material.css',
-                      './bower_components/font-awesome/css/font-awesome.css' 
+                    './bower_components/font-awesome/css/font-awesome.css'
                 ],
                 dest: './public/dist/bower.css'
             },
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
                 files: ['./public/app/**/*.js'],
                 tasks: ['concat:scriptsjs', 'uglify:scriptsjs']
             },
-             scripts: {
+            scripts: {
                 files: ['./public/app/**/*.js'],
                 tasks: ['concat:scriptsjs']
             },
@@ -97,6 +97,12 @@ module.exports = function (grunt) {
                 tasks: ['copy:json']
             }
         },
+        dpdjs: {
+            options: {
+                serverPath: './',
+                dest: './public/dist/dpd.js', 
+            }
+        },
         copy: {
             // ????? REMOVE / FIX tinymcetheme, tinymcePlugin
             html: {
@@ -110,24 +116,24 @@ module.exports = function (grunt) {
                 src: '**/*.json',
                 dest: './public/dist/app/',
                 expand: true
-            },fafont: {
+            }, fafont: {
                 cwd: './bower_components/font-awesome/fonts/',
                 src: '**/*.*',
                 dest: './public/dist/fonts/',
                 expand: true
-            },tinymcetheme: {
+            }, tinymcetheme: {
                 cwd: './bower_components/tinymce-dist/themes/modern/',
                 src: '**/*.*',
                 dest: './public/dist/themes/modern/',
                 expand: true
             },
-             tinymcePlugin: {
+            tinymcePlugin: {
                 cwd: './bower_components/tinymce-dist/plugins/',
                 src: '**/*.*',
                 dest: './public/dist/plugins/',
                 expand: true
             },
-             tinymceSKINS: {
+            tinymceSKINS: {
                 cwd: './bower_components/tinymce-dist/skins/',
                 src: '**/*.*',
                 dest: './public/dist/skins/',
@@ -142,9 +148,30 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-dpdjs');
 
     //default task
-//    Uncomment for production
-    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'copy']);
-//     grunt.registerTask('default', ['concat',   'cssmin', 'copy']);
+    //    Uncomment for production
+    // grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'copy' ]);
+    grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'copy', 'dpdjs']);
+    // grunt.registerTask('default', ['concat',   'cssmin', 'copy']);
+    // grunt.registerTask('default', ['dpdjs']);
 };
+
+// module.exports = function(grunt) {
+
+//   grunt.initConfig({
+//   dpdjs: {
+//     options: {
+//         serverPath: './',
+//         dest: 'tmpdpdjs/dpd.js'
+//     }
+//   }
+// });
+ 
+//  grunt.loadNpmTasks('grunt-dpdjs');
+
+//   // Default task(s).
+//   grunt.registerTask('default', ['dpdjs']); 
+// };
+ 
