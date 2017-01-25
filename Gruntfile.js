@@ -148,7 +148,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-dpdjs');
+    grunt.loadNpmTasks('grunt-gen-dpdjs');
 
     //default task
     //    Uncomment for production

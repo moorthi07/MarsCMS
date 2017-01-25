@@ -1,15 +1,15 @@
 {
   "name": "MarsCMS",
   "version": "1.0.6",
-  "description": "",
+  "description": "MarsCMS is a boiler plate node.js / MEAN apps and a CMS ready to go. ",
   "main": "index.js",
   "repository": {
     "url": "git://github.com/moorthi07/MarsCMS.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js  ",
-    "dev": "ENV=development DEBUG=* node app.js  "
+    "dev": "ENV=development DEBUG=* node server.js  "
   },
   "author": "",
   "license": "ISC",
@@ -20,13 +20,19 @@
     "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-dpdjs": "^0.1.1"
+    "grunt-gen-dpdjs": "^0.1.1"
   },
   "dependencies": {
     "deployd": "^0.8.4",
     "dpd-clientlib": "0.0.1",
     "dpd-email": "^0.1.0",
     "dpd-fileupload": "^0.0.17",
-    "dpd-passport": "^0.3.4"
+    "dpd-passport": "^0.3.4",
+    "grunt-gen-dpdjs": "^0.1.2",
+      "chai": "*",
+    "less": "*",
+    "mocha": "*",
+    "mocha-jshint": "2.3.1",
+    "mocha-phantomjs": "^4.1.0" 
   }
 }
