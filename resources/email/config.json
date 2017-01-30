@@ -1,11 +1,11 @@
 {
 	"type": "Email",
-	"host": "smtp.1and1.com",
+	"host": "smtp.someemailserver.com",
 	"port": "587",
 	"ssl": false,
-	"username": "info@indo-mars.com",
+	"username": "info@someemailserver.com",
 	"password": "set-up-right-password-here",
-	"defaultFromAddress": "info@indo-mars.com",
+	"defaultFromAddress": "info@someemailserver.com",
 	"internalOnly": true,
 	"productionOnly": false,
 	"base64": false
