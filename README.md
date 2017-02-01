@@ -26,14 +26,20 @@ MARS Mobile CMS v0.1
  
 ---
 ###Download
-To download paste this command in your terminal window:
+To download 
+copy and paste below git command in your terminal window:
 
 ```
-https://github.com/moorthi07/MarsCMS.git
+git clone https://github.com/moorthi07/MarsCMS.git
 ```
+This will download the all the code from this repository to a folder 'MarsCMS'
+Then 'CD'  into 'MarsCMS' Directory
 ---
 
 ###Instalation
+
+###Pre - Requisite : (Node.js, MongoDB, Bower, Grunt)
+
 Make sure you have [Node.js](https://nodejs.org/) installed.   [MongoDB](http://www.mongodb.org/) - community version installed. [Git terminal tool] (https://git-scm.com/) installed.
  
 *** Make sure you are in elevated adminstrator permission. (Some packages will through error if you don't have right permission.)
@@ -42,7 +48,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed.   [MongoDB](http://
 ```
 -- In Windows : Right click on 'command prompt' in menu and select 'Run as administrator'
 
-Step 1. - Install Grunt and Bower
+Step 1. (Pre - Requisite) - Install Grunt and Bower 
 
 Open your terminal/command window and install Grunt by pasting this code:
 ```
@@ -82,10 +88,10 @@ grunt watch
 
 ###Check MongoDB connection string:
 
-If you have not created any mongodb database, Mars CMS will automatically create dpdinterface  database in mongodb. If you like to use different database , change the following code in 'app.js' in the root folder (not in the /public folder *)
+If you have not created any mongodb database, Mars CMS will automatically create 'MarsCMSDB'  database in mongodb. If you like to use different database , change the following code in 'app.js' in the root folder (not in the /public folder *)
 ```
 db: {
-    connectionString: 'mongodb://localhost:27017/dpdinterface'
+    connectionString: 'mongodb://localhost:27017/MarsCMSDB'
   }
 ```
 You can run the app by starting mongodb and the entire app. After that, open your browser and go to [http://localhost:2403/dashboard](http://localhost:2403/dashboard). Go to the users collection and add an admin user. (Fillin Users first and last name and select admin column check box to make the user as 'ADMIN')
@@ -108,7 +114,7 @@ npm run dev
 ---
 ### Accessing two User Interfaces: ( GUI )
  ```
-1. Deployd admin Dashboard: URL:
+1. Deployd admin Dashboard: URL: This is an interface for your Resources (Collections, Models, config), Events Code (Get, Post,Delete, put, before and after commit etc.) and Data
 ```
 http://localhost:2403/dashboard
 ```
@@ -129,7 +135,8 @@ We are working on to make it best. Post your comments here.
  
 
 
-
+##Contribute:
+To contribute fork this repository and make changes, initiate a pull request.
 
 
 
