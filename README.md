@@ -25,7 +25,19 @@ MARS Mobile CMS v0.1
 
  
 ---
+### Technology stack: MEAN with Deployd REST API NODEJS Framework
+NodeJs 
+Deployd Framework (www.deployd.com)
+AngularJs (1.5+)
+Angular Material Design (UI)
+MongoDB
+
 ###Download
+
+###Docker
+Docker image : coming soon on Docker hub.
+You can also build with the given 'DockerFile' to create an image and run with a mongodb link.
+
 To download 
 copy and paste below git command in your terminal window:
 
@@ -34,15 +46,16 @@ git clone https://github.com/moorthi07/MarsCMS.git
 ```
 This will download the all the code from this repository to a folder 'MarsCMS'
 Then 'CD'  into 'MarsCMS' Directory
----
+
 
 ###Instalation
+---
 
 ###Pre - Requisite : (Node.js, MongoDB, Bower, Grunt)
 
 Make sure you have [Node.js](https://nodejs.org/) installed.   [MongoDB](http://www.mongodb.org/) - community version installed. [Git terminal tool] (https://git-scm.com/) installed.
  
-*** Make sure you are in elevated adminstrator permission. (Some packages will through error if you don't have right permission.)
+*** Make sure you are in elevated administrator permission. (Some packages will through error if you don't have right permission.)
 ```
 -- In Mac / Linux : In terminal use 'sudo root' to change user to admin
 ```
@@ -94,7 +107,6 @@ db: {
     connectionString: 'mongodb://localhost:27017/MarsCMSDB'
   }
 ```
-You can run the app by starting mongodb and the entire app. After that, open your browser and go to [http://localhost:2403/dashboard](http://localhost:2403/dashboard). Go to the users collection and add an admin user. (Fillin Users first and last name and select admin column check box to make the user as 'ADMIN')
 
 First start and run the,
 MongoDB:
@@ -111,35 +123,60 @@ For Application in development:
 ```
 npm run dev
 ```
+###***** Add admin user:
+You can run the app by starting mongodb and the entire app. After that, open your browser and go to [http://localhost:2403/dashboard](http://localhost:2403/dashboard). Go to the users collection and add an admin user. (Fillin Users first and last name and select admin column check box to make the user as 'ADMIN')
+
 ---
-### Accessing two User Interfaces: ( GUI )
+### Unit Testing: 
+For quick testing Use 'Postman' Developer tool available as a Chrome browser Add-on.
+You can find it here:
+Then Follow this steps:
+ - Install Postman on Chrome browser
+ - Left side go to collections and import 'test collections' json file from 
  ```
+ " test\postman_tests\'
+ ```
+  folder
+ - Select any request and Onthe Right side change the Json data as your need.
+
+ Note: YOU HAVE TO FIRST RUN 'LOGIN' -request in order to make other tests work. 
+
+
+### Accessing two User Interfaces: ( GUI )
+
 1. Deployd admin Dashboard: URL: This is an interface for your Resources (Collections, Models, config), Events Code (Get, Post,Delete, put, before and after commit etc.) and Data
+
 ```
 http://localhost:2403/dashboard
+```
 ```
 2. Public website : URL: http://localhost:2403
 ```
 3. Website admin site (cms to update the public pages / add users / polls, etc.) - in the public website click on 'login' to open the cms admin site.
-```
+ 
 -- To change the first page (website look and content), login (step 3) to the Website admin site 
-```
+ 
 -- then  click on the menu button to open the side navigation menu
-```
+ 
 -- in the menu select 'Settings' -here you should set up your application title, app name, theme, etc.
-```
+ 
 -- you can create more users with different permission levels
-
-```
+ 
 We are working on to make it best. Post your comments here. 
  
+### For HOSTING
+You will have to change the 'BASEURL' const field in 
+```
+public/app.js
+```
 
 
-##Contribute:
+###Contribute:
 To contribute fork this repository and make changes, initiate a pull request.
+Help with adding more tests and features
+
+Also post your issues on issues section.
 
 
 
-
-
-####Thank you
+###Thank you
