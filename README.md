@@ -26,11 +26,11 @@ MARS Mobile CMS v0.1
  
 ---
 ### Technology stack: MEAN with Deployd REST API NODEJS Framework
-NodeJs 
-Deployd Framework (www.deployd.com)
-AngularJs (1.5+)
-Angular Material Design (UI)
-MongoDB
+- NodeJs 
+- Deployd Framework (www.deployd.com)
+- AngularJs (1.5+)
+- Angular Material Design (UI)
+- MongoDB
 
 ###Download
 
@@ -38,7 +38,7 @@ MongoDB
 Docker image : coming soon on Docker hub.
 You can also build with the given 'DockerFile' to create an image and run with a mongodb link.
 
-To download 
+### GIT download 
 copy and paste below git command in your terminal window:
 
 ```
@@ -154,13 +154,13 @@ http://localhost:2403/dashboard
 ```
 3. Website admin site (cms to update the public pages / add users / polls, etc.) - in the public website click on 'login' to open the cms admin site.
  
--- To change the first page (website look and content), login (step 3) to the Website admin site 
+- To change the first page (website look and content), login (step 3) to the Website admin site 
  
--- then  click on the menu button to open the side navigation menu
+- then  click on the menu button to open the side navigation menu
  
--- in the menu select 'Settings' -here you should set up your application title, app name, theme, etc.
+- in the menu select 'Settings' -here you should set up your application title, app name, theme, etc.
  
--- you can create more users with different permission levels
+- you can create more users with different permission levels
  
 We are working on to make it best. Post your comments here. 
  
