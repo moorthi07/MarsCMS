@@ -7,6 +7,9 @@ var server = deployd({
   port: process.env.PORT || port,
   env: process.env.ENV || 'development',
   db: {
+   //Always use secured mongodb.. Set up an authentication like below example
+      //connectionString: 'mongodb://MarsAdmin:MarsAdminpassword123@localhost:27017/MMUDB'
+   //This DB is created at the default '/data' folder of the Mongodb installation.
     connectionString: 'mongodb://localhost:27017/MarsCMSDB'
   }
 });
