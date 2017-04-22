@@ -25,20 +25,20 @@ MARS Mobile CMS v0.1
 
  
 ---
-### Technology stack: MEAN with Deployd REST API NODEJS Framework
+## Technology stack: MEAN with Deployd REST API NODEJS Framework
 - NodeJs 
 - Deployd Framework (www.deployd.com)
 - AngularJs (1.5+)
 - Angular Material Design (UI)
 - MongoDB
 
-###Download
+## Download
 
-###Docker
+## Docker
 Docker image : coming soon on Docker hub.
 You can also build with the given 'DockerFile' to create an image and run with a mongodb link.
 
-### GIT download 
+## GIT download 
 copy and paste below git command in your terminal window:
 
 `
@@ -48,10 +48,10 @@ This will download the all the code from this repository to a folder 'MarsCMS'
 Then 'CD'  into 'MarsCMS' Directory
 
 
-###Instalation
+## Instalation
 ---
 
-###Pre - Requisite : (Node.js, MongoDB, Bower, Grunt)
+## Pre - Requisite : (Node.js, MongoDB, Bower, Grunt)
 
 Make sure you have [Node.js](https://nodejs.org/) installed.   [MongoDB](http://www.mongodb.org/) - community version installed. [Git terminal tool] (https://git-scm.com/) installed.
  
@@ -97,9 +97,9 @@ Use Grunt watch to be able to deploy the modified files automatically by running
 grunt watch
 `
 ---
-###Running the app
+### Running the app
 
-###Check MongoDB connection string:
+### Check MongoDB connection string:
 
 If you have not created any mongodb database, Mars CMS will automatically create 'MarsCMSDB'  database in mongodb. If you like to use different database , change the following code in 'app.js' in the root folder (not in the /public folder *)
 `
@@ -123,11 +123,11 @@ For Application in development:
 `
 npm run dev
 `
-###***** Add admin user:
+## ***** Add admin user:
 You can run the app by starting mongodb and the entire app. After that, open your browser and go to [http://localhost:2403/dashboard](http://localhost:2403/dashboard). Go to the users collection and add an admin user. (Fillin Users first and last name and select admin column check box to make the user as 'ADMIN')
 
 ---
-### Unit Testing: 
+## Unit Testing: 
 For quick testing Use 'Postman' Developer tool available as a Chrome browser Add-on.
 You can find it here:
 Then Follow this steps:
@@ -142,7 +142,7 @@ Then Follow this steps:
  Note: YOU HAVE TO FIRST RUN 'LOGIN' -request in order to make other tests work. 
 
 
-### Accessing two User Interfaces: ( GUI )
+## Accessing two User Interfaces: ( GUI )
 
 1. Deployd admin Dashboard: URL: This is an interface for your Resources (Collections, Models, config), Events Code (Get, Post,Delete, put, before and after commit etc.) and Data
 
@@ -151,7 +151,7 @@ http://localhost:2403/dashboard
 `
 `
 2. Public website : URL: http://localhost:2403
-```
+`
 3. Website admin site (cms to update the public pages / add users / polls, etc.) - in the public website click on 'login' to open the cms admin site.
  
 - To change the first page (website look and content), login (step 3) to the Website admin site 
@@ -164,14 +164,14 @@ http://localhost:2403/dashboard
  
 We are working on to make it best. Post your comments here. 
  
-### For HOSTING
+## For HOSTING
 You will have to change the 'BASEURL' const field in 
 `
 public/app.js
 `
 
 
-###Contribute:
+## Contribute:
 To contribute fork this repository and make changes, initiate a pull request.
 Help with adding more tests and features
 
@@ -179,4 +179,4 @@ Also post your issues on issues section.
 
 
 
-###Thank you
+### Let us know what you built with this app. Thank you
