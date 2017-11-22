@@ -35,8 +35,9 @@ MARS Mobile CMS v0.1
 ## Download
 
 ## Docker
-Docker image : coming soon on Docker hub.
 You can also build with the given 'DockerFile' to create an image and run with a mongodb link.
+
+Docker image : coming soon on Docker hub.
 
 ## GIT download 
 copy and paste below git command in your terminal window:
